@@ -1,0 +1,37 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Welcome to {SITE_TITLE}</h1>
+			<p>
+				{SITE_DESCRIPTION}
+			</p>
+			<p>
+				This news blog brings you the most recent updates from various fields including technology,
+				science, politics, and more. Stay informed with our curated content and in-depth analysis.
+			</p>
+			<p>Here's what you can expect from our news blog:</p>
+			<ul>
+				<li>Daily updates on breaking news</li>
+				<li>In-depth analysis of current events</li>
+				<li>Feature stories on important topics</li>
+				<li>Opinion pieces from expert contributors</li>
+			</ul>
+			<p>
+				Start exploring our latest articles in the <a href="/blog">News</a> section!
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
